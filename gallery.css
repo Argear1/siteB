@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Kaisei+Tokumin&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Tokumin:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Tokumin:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yuji+Syuku&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #ffffff;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+}
+
+.logo img {
+    width: auto;
+    height: 160px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    top: 0;
+}
+
+nav ul li a:hover {
+    color: #8a8989;
+}
+
+.contact {
+    font-size: 16px;
+    color: #000;
+}
+
+.gallery-container {
+    width: 1200px;
+    margin: 0 auto; /* Центрируем галерею */
+    padding: 20px;
+}
+
+.gallery-main {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-images {
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-right: 70px;
+
+}
+
+.gallery-images li {
+    width: 100%;
+    height: 400px; /* Настроить высоту по необходимости */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s; /* Плавно изменяем прозрачность */
+}
+
+.gallery-images li.active {
+    opacity: 1;
+    z-index: 1; /* Ставим активное изображение поверх остальных */
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Покрываем весь контейнер, обрезая лишнее */
+}
+
+.gallery-thumbnails {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery-thumbnails li {
+    width: 100%;
+    height: 80px; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fotogalereya {
+    color: #000;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+
+}
+
+
+footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.copyright {
+    text-align: left;
+    margin-left: 80px;
+
+    white-space: nowrap;
+}
+
+.links {
+    height: 150px;
+    width: 800px;
+    line-height: 30px;
+    margin-left: 260px;
+    text-align: center;
+}
+
+footer a {
+    color: #777;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.programm-font {
+    color: #233025cb;
+}

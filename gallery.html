@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+
+            <a href="b.html">
+            <img src="img/black-logo.PNG" alt="Горный Исток">
+        </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="programms.html">Программы</a></li>
+                <li><a href="razmeshenie.html">Размещение</a></li>
+                <li><a href="specialist.html">Специалисты</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <span>8 800 550 52 71</span>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="gallery-container">
+        <h2 class="fotogalereya">Фотогалерея</h2>
+        <div class="gallery-main">
+            <ul class="gallery-images">
+                <li id="image1" data-src="img/gallery-1.jpeg" class="active"> 
+                    <img src="img/gallery-1.jpeg" alt="Изображение 1">
+                </li>
+                <li id="image2" data-src="img/gallery-2.jpeg">
+                    <img src="img/gallery-2.jpeg" alt="Изображение 2">
+                </li>
+                <li id="image3" data-src="img/gallery-3.jpeg">
+                    <img src="img/gallery-3.jpeg" alt="Изображение 3">
+                </li>
+                <li id="image4" data-src="img/gallery-4.jpeg">
+                    <img src="img/gallery-4.jpeg" alt="Изображение 4">
+                </li>
+                <li id="image5" data-src="img/gallery-5.jpeg">
+                    <img src="img/gallery-5.jpeg" alt="Изображение 5">
+                </li>
+                <li id="image6" data-src="img/gallery-6.jpeg">
+                    <img src="img/gallery-6.jpeg" alt="Изображение 6">
+                </li>
+                <li id="image7" data-src="img/gallery-7.jpeg">
+                    <img src="img/gallery-7.jpeg" alt="Изображение 7">
+                </li>
+                <li id="image8" data-src="img/gallery-8.jpeg">
+                    <img src="img/gallery-8.jpeg" alt="Изображение 8">
+                </li>
+                <li id="image9" data-src="img/gallery-9.jpeg">
+                    <img src="img/gallery-9.jpeg" alt="Изображение 9">
+                </li>
+            </ul>
+            <ul class="gallery-thumbnails">
+                <li><a href="#image1"><img src="img/gallery-1.jpeg" alt="Изображение 1"></a></li>
+                <li><a href="#image2"><img src="img/gallery-2.jpeg" alt="Изображение 2"></a></li>
+                <li><a href="#image3"><img src="img/gallery-3.jpeg" alt="Изображение 3"></a></li>
+                <li><a href="#image4"><img src="img/gallery-4.jpeg" alt="Изображение 4"></a></li>
+                <li><a href="#image5"><img src="img/gallery-5.jpeg" alt="Изображение 5"></a></li>
+                <li><a href="#image6"><img src="img/gallery-6.jpeg" alt="Изображение 6"></a></li>
+                <li><a href="#image7"><img src="img/gallery-7.jpeg" alt="Изображение 7"></a></li>
+                <li><a href="#image8"><img src="img/gallery-8.jpeg" alt="Изображение 8"></a></li>
+                <li><a href="#image9"><img src="img/gallery-9.jpeg" alt="Изображение 9"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024, Горный Исток. Все права защищены</p>
+            <div class="links">
+                <a href="#">Правила проживания СКК "Горный"</a> |
+                <a href="#">Политика в отношении обработки персональных данных</a> |
+                <a href="#">Политика в области качества</a> |
+                <a href="#">Карьера в Горный Исток</a> |
+                <a href="#">Карта курорта</a> |
+                <a href="#">О недопущении действий коррупционного характера</a> |
+                <a href="#">Закупки СКК Горный</a> |
+                <a href="#">Комплаенс</a> |
+                <a href="#">Кодекс корпоративной этики</a> |
+                <a href="#">Согласие на обработку персональных данных</a> |
+                <a href="#">Согласие на получение рекламных материалов</a> |
+                <a href="#">Политика конфиденциальности</a> |
+                <a href="#">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const thumbnails = document.querySelectorAll('.gallery-thumbnails li');
+    const galleryImages = document.querySelectorAll('.gallery-images li');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const targetImageId = thumbnail.querySelector('a').getAttribute('href').substring(1);
+            const targetImage = document.getElementById(targetImageId);
+
+            // Убираем класс active с всех изображений
+            galleryImages.forEach(image => {
+                image.classList.remove('active');
+            });
+
+            // Добавляем класс active к выбранному изображению
+            targetImage.classList.add('active');
+        });
+    });
+    </script>
+</body>
+</html>

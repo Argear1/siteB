@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.book-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.book-btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.content {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.booking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.booking-form .date {
+    font-size: 18px;
+    text-align: center;
+}
+
+.booking-form .date span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #ddd;
+}

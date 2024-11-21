@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Kaisei+Tokumin&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Tokumin:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yuji+Syuku&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/background-black.jpg'); /* Замените на ваше фоновое изображение */
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+}
+
+.logo img {
+    width: auto;
+    height: 160px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    top: 0;
+}
+
+nav ul li a:hover {
+    color: #8a8989;
+}
+
+.contact {
+    font-size: 16px;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 70px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.program-general {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.program,
+.program-2 {
+    flex: 1; /* Занимают равное пространство */
+    max-width: 48%; /* Ограничение ширины, чтобы не превышало 100% */
+}
+
+.program {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+    height: 450px;
+    transition: transform 0.3s;
+}
+
+.program img {
+    width: 180px;
+    border-radius: 10px;
+}
+.program h2 {
+    color: #5b0d0d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+.program h3 {
+    margin-top: 15px;
+    color: #555;
+    font-size: 1em;
+    margin-top: 2px;
+}
+.program ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.program p {
+    line-height: 1.6;
+}
+
+.program-2 {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+    height: 450px;
+    transition: transform 0.3s;
+}
+
+.program-2 img {
+    width: 180px;
+    border-radius: 10px;
+}
+.program-2 h2 {
+    color: #5b0d0d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+.program-2 h3 {
+    margin-top: 15px;
+    color: #555;
+    font-size: 1em;
+}
+.program-2 ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.program-2 p {
+    line-height: 1.6;
+}
+
+
+
+.program-3 {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    height: 450px;
+    transition: transform 0.3s;
+}
+
+.program-3 img {
+    width: 180px;
+    border-radius: 10px;
+}
+.program-3 h2 {
+    color: #5b0d0d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+.program-3 h3 {
+    margin-top: 15px;
+    color: #555;
+    font-size: 1em;
+}
+.program-3 ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.program-3 p {
+    line-height: 1.6;
+}
+
+footer {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.copyright {
+    text-align: left;
+    margin-left: 80px;
+
+    white-space: nowrap;
+}
+
+.links {
+    height: 150px;
+    width: 800px;
+    line-height: 30px;
+    margin-left: 260px;
+    text-align: center;
+}
+
+footer a {
+    color: #c7c7c7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.programm-font {
+    color: #233025cb;
+}
+
+
